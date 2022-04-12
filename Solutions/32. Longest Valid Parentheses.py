@@ -15,5 +15,6 @@ class Solution:
                 if(len(i_stack)==0):    #now if len(i_index)==0 then simply append the current index
                     i_stack.append(i)
                 else:
-                    longestL=max(longestL,i-i_stack[-1])           #else if after popping after encountering a ) bracket if the i_stack has not                                                                           become empty then simply find the length 
+                    longestL=max(longestL,i-i_stack[-1])           #else if after popping after encountering a ) bracket if the i_stack has not 
+                                                                   #become empty then simply find the length 
         return longestL
